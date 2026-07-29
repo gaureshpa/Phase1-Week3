@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    color:#0f172a;
+    background:#fff;
+    padding:50px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h1{
+    font-size:40px;
+    color:#030d49;
+}
+
+.section-title p{
+    color:#000000;
+    margin-top:10px;
+}
+
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-auto-rows:250px;
+    gap:20px;
+}
+
+
+.project{
+    background:#1dbadd;
+    border-radius:12px;
+    overflow:hidden;
+    position:relative;
+    transition:.3s;
+}
+
+.project:hover{
+    transform:translateY(-6px);
+}
+
+
+.featured{
+    grid-column:span 2;
+    grid-row:span 2;
+}
+
+.project-content{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
+
+.featured .project-content{
+    flex-direction:row;
+}
+
+.image{
+    flex:1;
+    position:relative;
+    overflow:hidden;
+}
+
+.image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.8);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    transform:translateY(100%);
+    transition:.4s;
+}
+
+.image:hover .overlay{
+    transform:translateY(0);
+}
+
+.overlay h2{
+    color:white;
+}
+
+.overlay a{
+    text-decoration:none;
+    background:#38bdf8;
+    color:white;
+    padding:10px 20px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.overlay a:hover{
+    background:#0ea5e9;
+}
+
+
+.info{
+    flex:1;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:15px;
+}
+
+.tags span{
+    background:#d69110;
+    color:white;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.info h3{
+    margin-bottom:10px;
+    color:#fff;
+}
+
+.info p{
+    color:white;
+    line-height:1.6;
+    font-size:15px;
+}
+
+#cardContainer {
+    margin: 24px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
