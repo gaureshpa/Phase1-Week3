@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR Flamengo</title>
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+</script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="navigation">
+        <nav class="primary-navbar">
+            <div class="logo-container"></div>
+
+            <div class="nav-links">
+                <a href="">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+            </div>
+        </nav>
+
+        <nav class="secondary-navbar">
+            <div class="secondary-links">
+                <a href="#">SHOP</a>
+                <a href="team.html">TEAM</a>
+                <a href="#">YOUTH PROGRAM</a>
+                <a href="#">HISTORY</a>
+                <a href="#">NEWS</a>
+                <a href="contact.html">CONTACT US</a>
+            </div>
+
+            <div class="theme-toggle">
+                <button class="toggle-button" aria-pressed="false">
+                    CHANGE THEME
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>INTERNACIONAL VS FLAMENGO</h1>
+                <p>30 July 2026, Estádio José Pinheiro Borda</p>
+            </div>
+        </section>
+
+        <section class="club-section">
+            <h2>OUR CLUBS</h2>
+            <div class="clubs">
+
+                <div class="club-card football">
+                    <h3>Football</h3>
+                    <img src="images/football.jpeg" alt="Flamengo Football Team">
+                    <p class="card-text">
+                        Universally recognized as the most popular team in Brazil with over 46 million supporters, filling iconic venues like Maracana.
+                    </p>
+                </div>
+
+                <div class="club-card basketball">
+                    <div class="card-content">
+                        <h3>Basketball</h3>
+                        <img src="images/basketball.jpeg" alt="Flamengo Basketball Team">
+                        <p class="card-text">
+                            Highly successful within national bounds (known as FlaBasquete), commanding a leading 40% share of Brazilian basketball internet interest.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="club-card swimming">
+                    <div class="card-content">
+                        <h3>Swimming</h3>
+                        <img src="images/swimming.jpg" alt="Flamengo Swim Team">
+                        <p class="card-text">
+                            the swimming section operates as part of the club’s Olympic sports branch focusing on regional and national interclub championships.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <h2>TESTIMONIALS</h2>
+            <div class="testimonials" >
+                <div class="testimonial-card" id="zico">
+                    <p class="testimonial-text">
+                            My father taught me to love Flamengo, which has always been my second home.
+                    </p>
+                    <div class="testimonial-profile">
+                        <img src="images/zico.jpeg" alt="User Photo" class="profile-img">
+                        <div class="profile-info">
+                            <h3 class="profile-name">Zico</h3>
+                            <p class="profile-title">Ex-Flamengo Player</p>
+                        </div>
+                    </div>
+            </div>
+
+                    <div class="testimonial-card" id="jorginho">
+                        <p class="testimonial-text">
+                            It's hard to put into words. It's incredibly intense. You have to give all of yourself, body and soul - and it's so worth it.
+                        </p>
+                        <div class="testimonial-profile">
+                            <img src="images/jorginho.webp" alt="User Photo" class="profile-img">
+                            <div class="profile-info">
+                                <h3 class="profile-name">Jorginho</h3>
+                                <p class="profile-title">Flamengo Captain</p>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="testimonial-card" id="romario">
+                    <p class="testimonial-text">
+                        What I can say to the Vasco fans is that when there is a Vasco-Flamengo, bring a handkerchief to the Maracanã because you are going to cry a lot.
+                    </p>
+                    <div class="testimonial-profile">
+                        <img src="images/romario.jpeg" alt="User Photo" class="profile-img">
+                        <div class="profile-info">                                <h3 class="profile-name">Romario</h3>
+                            <p class="profile-title">Ex-Flamengo Player</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; CR Flamengo 2026</p>
+    </footer>
+
+    <script src="js/dark-mode.js"></script>
+</body>
+</html>

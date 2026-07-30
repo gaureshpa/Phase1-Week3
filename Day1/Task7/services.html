@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR Flamengo</title>
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+</script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="navigation">
+        <nav class="primary-navbar">
+            <div class="logo-container"></div>
+
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="">SERVICES</a>
+            </div>
+        </nav>
+
+        <nav class="secondary-navbar">
+            <div class="secondary-links">
+                <a href="#">SHOP</a>
+                <a href="team.html">TEAM</a>
+                <a href="#">YOUTH PROGRAM</a>
+                <a href="#">HISTORY</a>
+                <a href="#">NEWS</a>
+                <a href="contact.html">CONTACT US</a>
+            </div>
+
+            <div class="theme-toggle">
+                <button class="toggle-button" aria-pressed="false">
+                    CHANGE THEME
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="services-hero">
+            <h1>OUR SERVICES</h1>
+            <p>Experience Flamengo beyond match day.</p>
+        </section>
+
+        <section class="services-section">
+            <h2>WHAT WE OFFER</h2>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Match Tickets</h3>
+                    <p>Secure seats for home and away fixures with priority digital booking.</p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Match Photo Finder</h3>
+                    <p>Upload your photo on our website and find your photos clicked by our photographers!</p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Fan Membership</h3>
+                    <p>Join the Flamengo family and enjoy ticket discounts and loyalty perks.</p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Stadium Tour</h3>
+                    <p>Meet club legends, participate in fanfest, charity events etc!</p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Youth Academy</h3>
+                    <p>Professional football coaching programmes focused on developing young talents.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="pricing-section">
+            <h2>MEMBERSHIP PLANS</h2>
+
+            <div class="table-container">
+
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Basic</th>
+                            <th class="recommended">Premium</th>
+                            <th>Elite</th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <td>Monthly Fee</td>
+                        <td>$2.99</td>
+                        <td class="recommended">$6.99</td>
+                        <td>$14.99</td>
+                    </tr>
+
+                    <tr>
+                        <td>Priority Ticket</td>
+                        <td>Yes</td>
+                        <td class="recommended">Yes</td>
+                        <td>Yes</td>
+                    </tr>
+
+                    <tr>
+                        <td>Merch Discount</td>
+                        <td>5%</td>
+                        <td class="recommended">15%</td>
+                        <td>20%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Stadium Tour</td>
+                        <td>No</td>
+                        <td class="recommended">Yes</td>
+                        <td>yes</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>JOIN THE FLAMENGO FAMILY</h2>
+
+            <p>Become an official Flamengo member today and enjoy exclusive benefits, unforgettable matchday experiences,
+                and priority access to everything the club has to offer.
+            </p>
+
+            <a href="#" class="cta-btn">Become a Member</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; CR Flamengo 2026</p>
+    </footer>
+    <script src="js/dark-mode.js"></script>
+</body>
+</html>

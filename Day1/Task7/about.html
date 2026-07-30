@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR Flamengo</title>
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+</script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="navigation">
+        <nav class="primary-navbar">
+            <div class="logo-container"></div>
+
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+            </div>
+        </nav>
+
+        <nav class="secondary-navbar">
+            <div class="secondary-links">
+                <a href="#">SHOP</a>
+                <a href="team.html">TEAM</a>
+                <a href="#">YOUTH PROGRAM</a>
+                <a href="#">HISTORY</a>
+                <a href="#">NEWS</a>
+                <a href="contact.html">CONTACT US</a>
+            </div>
+
+            <div class="theme-toggle">
+                <button class="toggle-button" aria-pressed="false">
+                    CHANGE THEME
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="timeline">
+            <h2 class="timeline-title">HISTORY</h2>
+
+            <dl class="timeline-list">
+                <div class="timeline-item">
+                    <dt>1895</dt>
+                    <dd>CR Flamengo is founded in Rio de Janeiro</dd>
+                </div>
+
+                <div class="timeline-item">
+                    <dt>1912</dt>
+                    <dd>Football department is officially created</dd>
+                </div>
+
+                <div class="timeline-item">
+                    <dt>1981</dt>
+                    <dd>Wins the Copa Libertadores and Intercontinental Cup</dd>
+                </div>
+
+                <div class="timeline-item">
+                    <dt>2019</dt>
+                    <dd>Wins another Copa Libertadores and league championship</dd>
+                </div>
+
+                <div class="timeline-item">
+                    <dt>2022</dt>
+                    <dd>Claims its third Copa Libertadores title</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section>
+            <h2>MISSION QUOTE</h2>
+
+            <blockquote>
+                <p class="quote-text">"Uma vez Flamengo, sempre Flamengo."</p>
+                <p class="quote-source">— Lamartine Babo, <cite>Club Anthem</cite></p>
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>OUR VALUES</h2>
+
+            <div class="our-values">
+                <div class="value-card">
+                    <h3>Collective Focus</h3>
+                    <p>
+                        Prioritizing community-based projects and collective welfare over individual treatment
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Social Impact</h3>
+                    <p>
+                        Using the strength of the Flamengo brand to support inclusion, education, and health in vulnerable areas.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Role Modeling</h3>
+                    <p>
+                        Acting as a positive influence for children and youth through sports and educational initiatives
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; CR Flamengo 2026</p>
+    </footer>
+    <script src="js/dark-mode.js"></script>
+</body>
+</html>

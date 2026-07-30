@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR Flamengo</title>
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+</script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="navigation">
+        <nav class="primary-navbar">
+            <div class="logo-container"></div>
+
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+            </div>
+        </nav>
+
+        <nav class="secondary-navbar">
+            <div class="secondary-links">
+                <a href="#">SHOP</a>
+                <a href="team.html">TEAM</a>
+                <a href="#">YOUTH PROGRAM</a>
+                <a href="#">HISTORY</a>
+                <a href="#">NEWS</a>
+                <a href="">CONTACT US</a>
+            </div>
+
+            <div class="theme-toggle">
+                <button class="toggle-button" aria-pressed="false">
+                    CHANGE THEME
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h1>CONTACT US</h1>
+            <form action="#" class="contact-form">
+
+                <div class="input-group">
+                    <input type="text" name="name" id="name" placeholder=" " required>
+                    <label for="name">Full Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" name="email" id="email" placeholder=" " required>
+                    <label for="email">Email Address</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" name="subject" id="subject" placeholder=" " required>
+                    <label for="subject">Subject</label>
+                </div>
+
+                <div class="input-group">
+                    <select name="department" id="department">
+                        <option value="" selected disabled></option>
+                        <option value="">General Enquiry</option>
+                        <option value="">Ticket Support</option>
+                        <option value="">Membership</option>
+                        <option value="">Merch</option>
+                    </select>
+                    <label for="department">Department</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea name="message" id="message" rows="6" placeholder=" " required></textarea>
+                    <label for="message">Message</label>
+                </div>
+
+                <label class="checkbox-container">
+                    <input type="checkbox" name="" id="">
+                    <span class="checkmark"></span>
+                    <p>I agree to the Privacy policy</p>
+                </label>
+                    
+                <button class="submit-btn">Send Message</button>
+    
+            </form>
+        </section>
+
+        <section class="map-section">
+            <h2>VISIT US</h2>
+            <div class="map-container">
+                <iframe title="Maracana Stadium"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940808.4974985615!2d-44.449671421874996!3d-22.912146500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e5dba888b0d%3A0xf5f33188ee6274e5!2sEst%C3%A1dio%20Jornalista%20M%C3%A1rio%20Filho!5e0!3m2!1sen!2sin!4v1785299958353!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; CR Flamengo 2026</p>
+    </footer>
+    <script src="js/dark-mode.js"></script>
+</body>
+</html>
