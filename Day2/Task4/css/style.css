@@ -1,0 +1,7 @@
+#error-overlay {
+    position: fixed;
+    background: red;
+    color: white;
+    padding: 20px;
+    display: none;
+}

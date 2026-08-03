@@ -114,7 +114,7 @@ compare(10, 20, 30, 40, 50); // a:10 b:20 rest:[30,40,50]
 
 // Arrows and arguments
 const arrowFunction = () => console.log(arguments);
-// arrowFunction(1, 2, 3); // ReferenceError: arguments is not defined at arrowFunction
+arrowFunction(1, 2, 3); // ReferenceError: arguments is not defined at arrowFunction
 
 const arrowWithRest = (...args) => console.log(args);
 arrowWithRest(1,2,3)

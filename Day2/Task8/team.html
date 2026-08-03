@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR Flamengo</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="navigation">
+        <nav class="primary-navbar">
+            <div class="logo-container"></div>
+
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+            </div>
+        </nav>
+
+        <nav class="secondary-navbar">
+            <div class="secondary-links">
+                <a href="#">SHOP</a>
+                <a href="">TEAM</a>
+                <a href="#">YOUTH PROGRAM</a>
+                <a href="#">HISTORY</a>
+                <a href="#">NEWS</a>
+                <a href="contact.html">CONTACT US</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <input type="radio" name="department" id="all" checked>
+        <input type="radio" name="department" id="coaching">
+        <input type="radio" name="department" id="players">
+        <input type="radio" name="department" id="medical">
+        <input type="radio" name="department" id="management">
+
+        <section class="dept-filter">
+            <!-- <label for="all" class="filter-btn">All</label>
+            <label for="coaching" class="filter-btn">Coaching</label>
+            <label for="players" class="filter-btn">Players</label>
+            <label for="medical" class="filter-btn">Medical</label>
+            <label for="management" class="filter-btn">Management</label> -->
+        </section>
+
+        <section class="team-grid">
+            <article class="team-card coaching">
+                <img src="images/coach.jpeg" alt="Head Coach">
+                <h3>Leonardo Tardim</h3>
+                <span>Head Coach</span>
+            </article>
+
+            <article class="team-card players">
+                <img src="images/gerson.jpeg" alt="Captain">
+                <h3>Gerson</h3>
+                <span>Team Captain</span>
+            </article>
+
+            <article class="team-card players">
+                <img src="images/bruno.jpg" alt="Vice Captain">
+                <h3>Bruno Henrique</h3>
+                <span>Vice Captain</span>
+            </article>
+
+            <article class="team-card players">
+                <img src="images/pedro.jpeg" alt="Pedro">
+                <h3>Pedro</h3>
+                <span>Striker</span>
+            </article>
+
+            <article class="team-card players">
+                <img src="images/arrascaeta.jpeg" alt="Arrascaeta">
+                <h3>Arrascaeta</h3>
+                <span>Midfielder</span>
+            </article>
+
+            <article class="team-card players">
+                <img src="images/paqueta.jpeg" alt="Paqueta">
+                <h3>Lucas Paqueta</h3>
+                <span>Midfielder</span>
+            </article>
+
+            <article class="team-card players">
+                <img src="images/leo pereira.jpg" alt="Paqueta">
+                <h3>Leo Pereira</h3>
+                <span>Defender</span>
+            </article>
+
+            <article class="team-card players">
+                <img src="images/rossi.webp" alt="Paqueta">
+                <h3>Augustin Rossi</h3>
+                <span>Goalkeeper</span>
+            </article>
+
+            <article class="team-card management">
+                <img src="images/tech_director.jpeg" alt="Technical Director">
+                <h3>Jose Boto</h3>
+                <span>Technical Director</span>
+            </article>
+
+            <article class="team-card coaching">
+                <img src="images/gk_coach.jpg" alt="GK Coach">
+                <h3>Thiago Eler</h3>
+                <span>Goalkeeper Coach</span>
+            </article>
+
+            <article class="team-card medical">
+                <img src="images/doctor.jpeg" alt="doctor">
+                <h3>Dr. Fernando Sassaki</h3>
+                <span>Team Doctor</span>
+            </article>
+
+            <article class="team-card management">
+                <img src="images/president.jpeg" alt="president">
+                <h3>Luiz Eduardo Baptista</h3>
+                <span>President</span>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; CR Flamengo 2026</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <button id="prev-btn" aria-label="Previous Image">&#10094</button>
+
+        <img src="" alt="Image Gallery" id="lightbox-img">
+
+        <button id="next-btn" aria-label="Next Image">&#10095</button>
+
+        <button id="close-btn" aria-label="Close lightbox">&times;</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

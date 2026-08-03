@@ -1,0 +1,22 @@
+body {
+    margin: 40px;
+}
+
+.item {
+    margin-bottom: 10px;
+}
+
+.accordion-btn {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    font-size: 18px;
+    background: rgb(0, 48, 206);
+    color: white;
+}
+
+.panel {
+    display: none;
+    border: 1px solid #c6c5c5;
+    padding: 15px;
+}

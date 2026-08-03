@@ -104,15 +104,15 @@ function createRateLimiter(fn, maxCalls, windowMs) {
     return function (...args) {
         const now = Date.now();
 
-        timestamps = timestamps.filter(
-            time => now -time <windowMs
-        );
+        // timestamps = timestamps.filter(
+        //     time => now -time <windowMs
+        // );
 
         if (timestamps.length >= maxCalls) {
             throw new Error("Rate limit exceeded");
         }
 
-        timestamps.push(now);
+        // timestamps.push(now);
 
         return fn(...args);
     }
