@@ -1,0 +1,12 @@
+.field-error {
+    color: red;
+    font-size: 14px;
+}
+
+.is-valid {
+    border: 2px solid green;
+}
+
+.is-invalid {
+    border: 2px solid red;
+}

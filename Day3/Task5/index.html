@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormValidator Class</title>
+</head>
+<body>
+    <h1>FormValidator class</h1>
+
+    <form id="reg-form">
+
+        <label>Name: </label>
+        <input type="text" name="name" id="name">
+        <span class="field-error"></span>
+
+        <br>
+
+        <label>Email</label>
+        <input type="email" name="email" id="email">
+        <span class="field-error"></span>
+
+        <br>
+
+        <label>Password</label>
+        <input type="password" name="password" id="password">
+
+        <label>Confirm Password</label>
+        <input type="password" name="confirmPassword" id="confirmPassword">
+        <span class="field-error"></span>
+
+        <br>
+
+        <button>Register</button>
+    </form>
+
+    <script src="js/form-validator.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

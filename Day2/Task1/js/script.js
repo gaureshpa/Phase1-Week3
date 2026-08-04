@@ -9,7 +9,7 @@ inner.addEventListener("click", (e) =>
     {
         console.log("Inner");
         // Stop propagation line
-        //e.stopPropagation(e);
+        // e.stopPropagation(e);
     } );
 
 // Capture
@@ -31,7 +31,7 @@ btn.addEventListener("click", (e) => {
 
 // preventDefault()
 
-document.getElementById("c").addEventListener("click", (e) => {
+document.getElementById("demoForm").addEventListener("click", (e) => {
     e.preventDefault();
     console.log("Not allowed!");
 });
