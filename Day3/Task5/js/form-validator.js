@@ -1,3 +1,11 @@
+// Task 5 (55 min) - FormValidator Class
+// 377. Build FormValidator(form, rules) - rules maps field names to arrays of rule objects
+// 378. Support: required, minLength(n), maxLength(n), pattern(regex), email, match(otherField),
+// custom(fn)
+// 379. Validate on blur (individual field) and on submit (all fields)
+// 380. Show inline errors in span.field-error. Add/remove is-invalid and is-valid CSS classes.
+// 381. Apply to the registration form from Week 1
+
 class FormValidator {
     constructor(form, rules) {
         this.form = form;
@@ -44,16 +52,23 @@ class FormValidator {
                 }
             }
 
+            if(rule.type === "minLength") {
+                if (value.length < rule.value) {
+                    error = `Minimum ${rule.value} characters needed.`;
+                    break;
+                }
+            }
+
             if(rule.type === "maxLength") {
                 if (value.length > rule.value) {
-                    error = `Maximum ${rule.value} characters.`;
+                    error = `Maximum ${rule.value} characters allowed.`;
                     break;
                 }
             }
 
             if(rule.type === "pattern") {
                 if (!rule.value.test(value)) {
-                    error = "Invalid format";
+                    error = "Invalid format. Password must contain atleast 8 characters, atlease one uppercase letter, one lowercase letter, one digit and one special character";
                     break;
                 }
             }
@@ -74,16 +89,11 @@ class FormValidator {
                 }
             }
 
-            if(rule.type === "custom") {
-                if (!rule.value(value)) {
-                    error = rule.message;
+            if(rule.type === "customAge") {
+                if (value < rule.value) {
+                    error = "Must be atleast 18";
                     break;
                 }
-            }
-
-            if(!rule.value(value)) {
-                error = rule.message;
-                break;
             }
         }
         this.showResult(field, error);
@@ -102,6 +112,5 @@ class FormValidator {
             field.classList.add("is-invalid")
         }
     }
-
     
 }

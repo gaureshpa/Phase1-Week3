@@ -1,3 +1,11 @@
+// Task 2 (40 min) - this Binding - All Four Rules
+// 366. Demonstrate all four: default binding (standalone call), implicit (method call), explicit
+// (call/apply/bind), new (constructor)
+// 367. Show this-loss: assign a class method to a variable, call it, show this is undefined in strict
+// mode. Fix three ways: arrow in constructor, .bind(), class field.
+// 368. Build bindAll(obj) that binds all enumerable methods to obj
+// 369. Show that arrow class fields fix this even in setTimeout callbacks
+
 // default binding
 
 function defaultBinding() {

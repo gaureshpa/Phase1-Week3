@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Cart</h1>
+
+        <div class="controls">
+            <input type="text" name="itemName" id="itemName" placeholder="Enter item name">
+
+            <input type="number" name="itemPrice" id="itemPrice" placeholder="Enter item price">
+
+            <input type="number" name="itemQuantity" id="itemQuantity" value="1" min="1" placeholder="Enter Item Qty.">
+
+            <button id="addItem">Add Item</button>
+        </div>
+
+        <div class="coupon">
+            <input type="text" name="coupon" id="coupon" placeholder="Enter coupon code">
+            <button id="applyCoupon">Apply Coupon</button>
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="summary">
+            <h2>Total: Rs. <span id="cartTotal">0</span></h2>
+
+            <button id="undo">Undo</button>
+        </div>
+    </div>
+
+    <script src="js/cart.js" defer></script>
+    <script src="js/app.js" defer></script>
+</body>
+</html>

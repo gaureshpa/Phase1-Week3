@@ -1,3 +1,10 @@
+// Task 3 (45 min) - Pure Functions & Immutable State
+// 370. Write impure updateUser(users, id, changes) that mutates the array. Write the pure version.
+// Verify the original is unchanged.
+// 371. Build a five-step pipeline: parseCSV, validateRows, transformRows, filterInvalid, formatOutput -
+// each a pure function with no side effects
+// 372. Write deepFreeze(obj) that recursively freezes all nested objects
+
 // Impure version
 
 function updateUser(users, id, changes) {

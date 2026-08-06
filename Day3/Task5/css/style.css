@@ -1,3 +1,21 @@
+h1 {
+    text-align: center;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: row;
+    margin: 12px;
+    gap: 12px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    flex-direction: column;
+}
+
 .field-error {
     color: red;
     font-size: 14px;
@@ -10,3 +28,5 @@
 .is-invalid {
     border: 2px solid red;
 }
+
+

@@ -4,33 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FormValidator Class</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>FormValidator class</h1>
 
     <form id="reg-form">
 
-        <label>Name: </label>
-        <input type="text" name="name" id="name">
-        <span class="field-error"></span>
+        <div class="field-container">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <span class="field-error"></span>
+        </div>
 
-        <br>
+      
+        <div class="field-container">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <span class="field-error"></span>
+        </div>
 
-        <label>Email</label>
-        <input type="email" name="email" id="email">
-        <span class="field-error"></span>
+        <div class="field-container">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age">
+            <span class="field-error"></span>
+        </div>
+        
+        <div class="field-container">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <span class="field-error"></span>
+        </div>
 
-        <br>
-
-        <label>Password</label>
-        <input type="password" name="password" id="password">
-
-        <label>Confirm Password</label>
-        <input type="password" name="confirmPassword" id="confirmPassword">
-        <span class="field-error"></span>
-
-        <br>
-
+        <div class="field-container">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirmPassword" id="confirmPassword">
+            <span class="field-error"></span>
+        </div>
+      
         <button>Register</button>
     </form>
 

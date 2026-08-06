@@ -1,3 +1,11 @@
+// // Task 1 (40 min) - Class Hierarchy - Shape Calculator
+// 361. Build Shape base class with constructor(name, colour), describe(), and static compare(a, b)
+// returning the larger-area shape
+// 362. Extend: Circle(radius) with area()=πr² and perimeter()=2πr, Rectangle(w,h), Triangle(base,
+// height)
+// 363. Override describe() in each subclass to include measurements
+// 364. Add ShapeCollection with add, removeById, getByType, sortByArea, getTotalArea
+// 365. Verify instanceof, Object.getPrototypeOf(), and constructor.name
 class Shape {
     constructor(name, colour) {
         this.id = Date.now() + Math.random();
